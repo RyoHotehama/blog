@@ -1,4 +1,3 @@
-
 import { getDetail } from "@/libs/client";
 import { Container, Paper, Typography } from "@mui/material";
 
