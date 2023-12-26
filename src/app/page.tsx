@@ -1,3 +1,4 @@
+'use client';
 import { getBlogs } from "@/libs/client";
 import { Container, List, ListItemButton, ListItemText, Typography } from "@mui/material";
 
