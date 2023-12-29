@@ -1,5 +1,5 @@
 import { getDetail } from "@/libs/client";
-import { Container, Paper, Typography } from "@mui/material";
+import { Container, Paper, Typography } from "@/styles/commonStyle"
 
 export async function generateMetadata({
   params : { blogId },

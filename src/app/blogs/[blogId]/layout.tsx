@@ -1,7 +1,4 @@
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter'
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export default function RootLayout({
   children,
@@ -9,12 +6,12 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="ja">
-      <body className={inter.className}>
+    <html lang="en">
+      <body>
         <AppRouterCacheProvider>
           {children}
         </AppRouterCacheProvider>
-        </body>
+      </body>
     </html>
   )
 }

@@ -1,6 +1,5 @@
-'use client';
 import { getBlogs } from "@/libs/client";
-import { Container, List, ListItemButton, ListItemText, Typography } from "@mui/material";
+import { Container, List, ListItemButton, ListItemText, Typography } from "@/styles/commonStyle"
 
 export default async function BlogList() {
   const { contents }  = await getBlogs();
@@ -13,7 +12,7 @@ export default async function BlogList() {
       {contents &&
         <List>
           {contents.map((blog) => (
-            <ListItemButton key={blog.id} LinkComponent={'a'} href={`/blogs/${blog.id}`}>
+            <ListItemButton key={blog.id} component={'a'} href={`/blogs/${blog.id}`}>
               <ListItemText primary={blog.title} primaryTypographyProps={{fontSize: 25}}/>
             </ListItemButton>
           ))}
